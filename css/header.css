@@ -1,11 +1,9 @@
 body > header {
-    position: sticky;
-    height: 73px;
-    top: 0;
-    z-index: 50;
     width: 100%;
-    background-color: #fff;
-    border-bottom: 1px solid #ebebeb;
+    display: flex;
+    justify-content: space-between;
+    height: 92px;
+    background: #FFFFFF;
 }
 
 .nav-bar {
@@ -14,23 +12,21 @@ body > header {
     justify-content: space-between;
     height: 100%;
     gap: 20px;
-    width: min(calc(100% - 48px), 1040px);
     margin-inline: auto;
 }
 
 .logo {
+    max-width: 200px;
+    height: 100%;
     display: flex;
     align-items: center;
-    flex-shrink: 0;
-    height: 100%;
-    padding: 0 53px 0 15px;
-    background-color: #000;
-    color: #fff;
-    text-decoration: none;  
-    font-size: 18px;
-    letter-spacing: 0.5px;
-    line-height: 20px;
-    font-weight: 500;
+    padding: 20px;
+    gap: 12px;
+    background: #121314;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 26px;
+    color: #FFFFFF;
 }
 
 .nav-links {
@@ -41,42 +37,55 @@ body > header {
 
 .nav-list {
     display: flex;
+    justify-content: center;
     align-items: center;
-    list-style: none;
-    gap: 0;
+    gap: 3px;
 }
 
 .nav-link {
-    display: block;
-    padding: 5px 12.5px;
+    display: flex;
+    align-items: flex-start;
+    padding: 8px 16px;
+    gap: 10px;
     font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
     color: #424E60;
-    text-decoration: none;
-    white-space: nowrap;
-    font-size: 13px;
+    transition: all 0.2s ease-in-out;
 }
 
-.nav-link.active,
-.nav-link:hover {
-    font-size: 12px;
+.nav-link:hover{
+    background: #FFF0A3;
     font-weight: 600;
     color: #132238;
-    background-color: var(--accent);
+}
+
+.nav-link.active{
+    background: #FFF0A3;
+    font-weight: 600;
+    color: #132238;
 }
 
 .nav-contact-item {
     flex-shrink: 0;
     margin-left: 10px;
-    padding-left: 17px;
+    padding-left: 24px;
     border-left: 1px solid #e6e8eb;
 }
 
 .nav-contact-item .nav-link {
-    padding: 9px 17px;
-    background-color: #ffd719;
-    color: #000;
-    font-size: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 24px;
+    gap: 12px;
+    background: #FFD91A;
+    font-style: normal;
     font-weight: 700;
+    font-size: 14px;
+    line-height: 48px;
+    text-transform: capitalize;
+    color: #132238;
 }
 
 .nav-contact-item .nav-link:hover {
