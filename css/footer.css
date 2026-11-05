@@ -81,6 +81,8 @@
 }
 
 .footer-location{
+    width: 24%;
+    max-width: 312px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -104,6 +106,8 @@
 }
 
 .footer-navigation{
+    width: 33%;
+    max-width: 424px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
