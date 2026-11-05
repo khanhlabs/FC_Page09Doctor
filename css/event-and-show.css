@@ -96,3 +96,80 @@
     line-height: 20px;
     color: #556070;
 }
+
+/*------------------RESPOSIVE-----------------------*/
+@media (max-width: 1024px) {
+    .event-and-show .wrapper {
+        padding-block: 72px;
+    }
+
+    .event-and-show-content {
+        gap: 16px;
+    }
+
+    .event-and-show-cards {
+        padding: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .event-and-show .wrapper {
+        padding-block: 56px;
+    }
+
+    .event-and-show-title {
+        gap: 24px;
+    }
+
+    .title-and-subtitle {
+        max-width: 70%;
+    }
+
+    .event-and-show-cards {
+        padding: 20px;
+    }
+
+    .time-and-comment {
+        flex-wrap: wrap;
+        gap: 8px 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    .event-and-show .wrapper {
+        padding-block: 40px;
+    }
+
+    .event-and-show-title {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .title-and-subtitle {
+        max-width: none;
+    }
+
+    .title-and-subtitle h2 {
+        font-size: 28px;
+    }
+
+    .title-and-subtitle h2::after {
+        width: 120px;
+        margin: 16px 0;
+    }
+
+    .event-and-show-content {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .event-and-show-cards {
+        width: 100%;
+        padding: 20px 18px;
+    }
+
+    .event-and-show-card-content .title {
+        font-size: 17px;
+    }
+}

@@ -67,3 +67,59 @@
     line-height: 20px;
     color: #1777E5;
 }
+
+/*------------------RESPOSIVE-----------------------*/
+@media (max-width: 1024px) {
+    .working-history .wrapper {
+        padding-block: 72px;
+    }
+
+    .working-history-cards {
+        gap: 16px;
+    }
+
+    .working-history-card {
+        padding: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .working-history .wrapper {
+        padding-block: 56px;
+    }
+
+    .working-history-cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .working-history .wrapper {
+        padding-block: 40px;
+        gap: 28px;
+    }
+
+    .working-history-title .title-tertiary {
+        font-size: 28px;
+    }
+
+    .working-history-title .desc-tertiary br {
+        display: none;
+    }
+
+    .working-history-cards {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .working-history-card {
+        padding: 20px;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 380px) {
+    .working-history-card {
+        padding: 16px;
+    }
+}

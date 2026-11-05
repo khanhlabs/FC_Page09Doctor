@@ -15,6 +15,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    min-width: 0;
 }
 
 .hero-title .name {
@@ -51,10 +52,139 @@
     display: flex;
     align-items: flex-start;
     gap: 24px;
+    max-width: 100%;
+}
+
+.hero-introduction .more-about a {
+    min-width: 0;
+    white-space: nowrap;
 }
 
 .hero-image {
     width: 49%;
     height: auto;
     margin-right: -60px;
+}
+
+/*------------------RESPOSIVE-----------------------*/
+@media (max-width: 1110px) {
+    .section-keyvisual {
+        padding-bottom: 140px;
+    }
+
+    .section-keyvisual .wrapper {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 32px;
+    }
+
+    .hero-title .title-primary {
+        font-size: clamp(42px, 5vw, 56px);
+        line-height: 1.05;
+    }
+
+    .hero-image {
+        margin-right: -30px;
+    }
+
+    .hero-introduction {
+        width: 100%;
+        max-width: none;
+    }
+
+    .hero-introduction .more-about {
+        align-self: center;
+        width: min(100%, 560px);
+        gap: 12px;
+    }
+
+    .hero-introduction .more-about a {
+        flex: 0 0 calc((100% - 12px) / 2);
+        width: calc((100% - 12px) / 2);
+        justify-content: center;
+        height: 64px !important;
+        padding-block: 0;
+        line-height: 1.4;
+        padding-inline: 16px;
+        font-size: 13px;
+    }
+
+    .hero-image {
+        width: min(100%, 520px);
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-keyvisual {
+        padding-bottom: 100px;
+    }
+
+    .section-keyvisual .wrapper {
+        gap: 28px;
+    }
+
+    .hero-title .name {
+        font-size: 18px;
+    }
+
+    .hero-title .title-primary {
+        margin-bottom: 28px;
+        font-size: clamp(34px, 7vw, 48px);
+    }
+
+    .hero-title .desc-primary {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 28px;
+    }
+
+    .hero-image {
+        width: min(100%, 460px);
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .section-keyvisual {
+        padding-bottom: 50px;
+    }
+
+    .section-keyvisual .wrapper {
+        flex-direction: column;
+        align-items: stretch;
+        padding-top: 36px;
+    }
+
+    .hero-title .name {
+        font-size: 15px;
+    }
+
+    .hero-title .title-primary {
+        font-size: clamp(30px, 9vw, 42px);
+        line-height: 1.15;
+    }
+
+    .hero-title .desc-primary {
+        font-size: 14px;
+    }
+
+    .hero-introduction .more-about {
+        width: min(100%, 460px);
+        gap: 8px;
+    }
+
+    .hero-introduction .more-about a {
+        flex: 0 0 calc((100% - 8px) / 2);
+        width: calc((100% - 8px) / 2);
+        height: 48px !important;
+        min-height: 0;
+        padding-inline: 8px;
+        font-size: 12px;
+    }
+
+    .hero-image {
+        width: min(100%, 360px);
+        margin: 0 auto;
+    }
 }

@@ -156,3 +156,153 @@
     height: 20px;
     font-size: 14px;
 }
+
+/*------------------RESPOSIVE-----------------------*/
+@media (max-width: 1260px) {
+    .book-section .wrapper {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .book-section::before {
+        width: 100%;
+        height: 48%;
+        inset: 0 0 auto;
+    }
+
+    .book-visual {
+        width: min(100%, 775px);
+        min-height: 0;
+        aspect-ratio: 1.575;
+        margin-inline: auto;
+    }
+
+    .book-content {
+        justify-content: center;
+        padding: 40px 0 0;
+        border-left: 0;
+    }
+
+    .book-content-inner {
+        width: min(100%, 760px);
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .book-feature {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .book-author {
+        justify-content: flex-start;
+    }
+
+    .double-book {
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .book-section {
+        padding-block: 72px;
+    }
+
+    .book-content {
+        padding-left: 0;
+    }
+
+    .double-book {
+        width: 138%;
+        left: -152px;
+    }
+
+    .book-content-inner{
+        padding-top: 130px;
+    }
+}
+
+@media (max-width: 768px) {
+    .book-section {
+        padding-block: 56px;
+    }
+
+    .book-section .wrapper {
+        gap: 20px;
+    }
+
+    .book-visual {
+        width: min(100%, 540px);
+    }
+
+    .book-content {
+        padding-left: 0;
+    }
+
+    .book-title {
+        font-size: 26px;
+        line-height: 1.3;
+    }
+
+    .book-feature h3 {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 600px) {
+    .book-section {
+        padding-block: 40px;
+    }
+
+    .book-section::before {
+        width: 100%;
+        height: 260px;
+        inset: 0 0 auto;
+    }
+
+    .book-section .wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: none;
+        padding-inline: 16px;
+        gap: 28px;
+    }
+
+    .book-visual {
+        width: 100%;
+        min-height: 0;
+        aspect-ratio: 1 / .85;
+    }
+
+    .double-book {
+        width: 100%;
+                left: -29px;
+        top: 13px;
+    }
+
+    .book-content {
+        width: 100%;
+        padding: 28px 0 0;
+        border-left: 0;
+        border-top: 1px solid #424E60;
+    }
+
+    .book-title {
+        font-size: 23px;
+    }
+
+    .book-description,
+    .book-feature p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .book-feature h3 {
+        align-items: flex-start;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
