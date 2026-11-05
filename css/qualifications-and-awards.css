@@ -146,6 +146,7 @@
     line-height: 62px;
     text-align: right;
     color: #F0F1F3;
+    transition: all 0.3s ease-in-out;
 }
 
 .award-info h3 {
