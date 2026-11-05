@@ -2,52 +2,43 @@
     background-color: #F0F1F3;
 }
 
-.event-and-show-content {
-    display: flex;
-    gap: 20px;
-}
-
 .event-and-show-card-content .event-and-show-content {
-    display: block;
-    font-size: 11px;
-    line-height: 1.6;
-    color: #556070;
+    background: #F0F1F3;
 }
 
 .event-and-show .wrapper{
-    display: grid;
-    padding-block: clamp(10px, 6vw, 70px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+    gap: 50px;
 }
 
 .event-and-show-title{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    margin-bottom: 42px;
+    font-size: 15px;
 }
 
 .title-and-subtitle{
-    width: 48%;    
+    max-width: 648px;
 }
 
-.title-and-subtitle .title{
-    font-size: 38px;
+.title-and-subtitle h2{
+    text-align: left;
 }
 
-.title-and-subtitle .subtitle{
-    line-height: 17px;
-    font-size: 13px;
-    color: #556070;
+.title-and-subtitle h2::after{
+    margin: 24px 0 24px;
 }
 
-.title-and-subtitle .title:after{
-    content: "";
-    display: block;
-    width: 170px;
-    height: 1px;
-    background-color: #d7dae0;
-    margin: 10px 0 20px;
+.title-and-subtitle p{
+    text-align: left;
 }
+
 
 .move-button {
     display: flex;
@@ -61,41 +52,47 @@
 }
 
 .event-and-show-content{
-    gap: 20px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px
 }
 
 .event-and-show-cards{
-    padding: 20px;
-    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px;
+    gap: 12px;
+    background: #FFFFFF;
 }
 
 .time-and-comment{
     display: flex;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.time-and-comment .time,
+.time-and-comment .comment{
+    display: flex;
+    gap: 6px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
     color: #424E60;
-    gap: 15px;
-    font-size: 12px;
-    margin-bottom: 8px;
-}
-
-.time-and-comment span img{
-    height: 22px;
-    justify-content: center;
-    margin: 0 -3px -5px 0;
-}
-
-.event-and-show-title{
-    font-size: 15px;
-    color: #424E60;
-}
-
-.event-and-show-content{
-    font-size: 11px;
-    color: #556070;
 }
 
 .event-and-show-card-content .title{
-    font-size: 15px;
-    margin-bottom: 10px;
-    color: #424E60;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: #132238;
+    margin-bottom: 20px;
+}
+
+.event-and-show-card-content .content{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #556070;
 }

@@ -1,10 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-	 viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
-<polygon fill="none" stroke="#1777E5" stroke-width="2" stroke-miterlimit="10" points="4,7 4,25 13,25 16,28 19,25 28,25 28,7 "/>
-<line fill="none" stroke="#1777E5" stroke-width="2" stroke-miterlimit="10" x1="9" y1="12" x2="23" y2="12"/>
-<line fill="none" stroke="#1777E5" stroke-width="2" stroke-miterlimit="10" x1="9" y1="16" x2="23" y2="16"/>
-<line fill="none" stroke="#1777E5" stroke-width="2" stroke-miterlimit="10" x1="9" y1="20" x2="19" y2="20"/>
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 9.75H15" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="#1777E5"/>
+<path d="M9 12.75H15" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="#1777E5"/>
+<path d="M14.0344 18.3656L12.6469 20.6813C12.5789 20.7918 12.4838 20.883 12.3705 20.9463C12.2573 21.0096 12.1297 21.0429 12 21.0429C11.8703 21.0429 11.7427 21.0096 11.6295 20.9463C11.5162 20.883 11.4211 20.7918 11.3531 20.6813L9.96563 18.3656C9.90037 18.2545 9.80723 18.1623 9.69542 18.0982C9.58362 18.034 9.45701 18.0002 9.32812 18H3.75C3.55109 18 3.36032 17.921 3.21967 17.7803C3.07902 17.6397 3 17.4489 3 17.25V5.25C3 5.05109 3.07902 4.86032 3.21967 4.71967C3.36032 4.57902 3.55109 4.5 3.75 4.5H20.25C20.4489 4.5 20.6397 4.57902 20.7803 4.71967C20.921 4.86032 21 5.05109 21 5.25V17.25C21 17.4489 20.921 17.6397 20.7803 17.7803C20.6397 17.921 20.4489 18 20.25 18H14.6719C14.543 18.0002 14.4164 18.034 14.3046 18.0982C14.1928 18.1623 14.0996 18.2545 14.0344 18.3656V18.3656Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="#1777E5"/>
 </svg>

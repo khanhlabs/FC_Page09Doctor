@@ -6,7 +6,7 @@
 }
 
 .success-stories-content-container {
-    width: 68%;
+    max-width: 536px;
     padding-top: 31px;
     letter-spacing: 1px;
 }
