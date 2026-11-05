@@ -1,7 +1,8 @@
 .success-stories .wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    padding-block: clamp(10px, 6vw, 80px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0;
 }
 
 .success-stories-content-container {
@@ -16,7 +17,10 @@
 
 .success-stories-content-container h2{
     text-align: left;
-    line-height: 1.2;
+}
+
+.success-stories-content-container h2::after{
+    margin: 24px 0 24px 0;
 }
 
 .success-stories-content-container span{
@@ -35,25 +39,30 @@
 }
 
 .success-story-cards {
-    margin-left: 10px;
-    width: 98%;
-    min-width: 0;
-    box-sizing: border-box;
-    border: 3px solid #FFD91A;
-    background-color: #FFFBE8;
-    padding: 46px 41px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 56px;
+    gap: 32px;
+    background: #FFFBE8;
+    border: 4px solid #FFD91A;
 }
 
 .success-story-cards img{
-    width: 30px;
-    margin-left:6px;
-    margin-bottom: 30px;
+    width: 56px;
+    height: auto;
 }
 
 .success-story-content{
-    font-size: 18px;
-    line-height: 1.6;
-    letter-spacing: -0.1px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #132238;
+}
+
+.button-group{
+    display: flex;
+    gap: 16px;
 }
 
 .move-button{
