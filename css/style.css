@@ -1059,6 +1059,7 @@ body > header {
 }
 
 .about-footer{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1070,7 +1071,6 @@ body > header {
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
-    margin: 0 auto;
 }
 
 .author .name{
@@ -1847,7 +1847,7 @@ body > header {
 }
 
 .success-stories-content-container .btn-slider{
-    justify-content: start;
+    justify-content: space-between;
 }
 
 .success-story-cards {
@@ -2454,4 +2454,40 @@ body > header {
     .footer-main {
         grid-template-columns: 1fr;
     }
+}
+
+
+.slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.pagination-dot {
+    width: 6px;
+    height: 6px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: #566273;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pagination-dot.active {
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+}
+
+
+.btn-slider .slide .pagination-dot,
+.event-and-show .wrapper .slide .pagination-dot{
+    background-color: #C3C7CE;
+}
+
+.btn-slider .slide .pagination-dot.active,
+.event-and-show .wrapper .slide .pagination-dot.active{
+    background-color: #132238;
 }
